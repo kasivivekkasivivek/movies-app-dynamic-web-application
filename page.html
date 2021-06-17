@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="header-container" id="headerContainerEle">
+            <nav class="nav-container">
+                <div class="logo-container">
+                    <a href="#" class="nav_logo" id="navLogoEle"><img class="logo-image" src="https://i.pinimg.com/736x/aa/f7/05/aaf705e06726ce3881288ae4be3ac5fe.jpg"></a>
+                </div>
+                <div class="search-box-container">
+                    <input type="search" class="header-search" placeholder="Search For A movie" id="inputSearchEle" />
+                </div>
+                <div class="nav-items" id="navItems">
+                    <ul class="nav-items-container">
+                        <li class="nav_item"><a href="#" class="nav_link active-link" id="topRatedMoviesEle">Top Rated Movies</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link" id="upComingMoviesELe">Up Coming Movies</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link" id="nowPlayingEle">Now Playing</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link" id="favouriteMovieEle">Favourite Movies</a></li>
+                    </ul>
+                </div>
+                <div class="nav_toggle" id="navToggle">
+                    <i class="bi bi-list burger-menu" id="burgerMenu"></i>
+                    <i class="bi bi-x close-menu d-none" id="closeMenu"></i>
+                </div>
+            </nav>
+        </header>
+
+
+        <main class='main-container' id="mainContainer">
+            <ul class="movies-unordered-list" id="moviesList">
+
+            </ul>
+        </main>
+        <footer class="footer-section d-none" id="footerSectionEle">
+            <div class='change-page-container'>
+                <button class='change-button' id="previousPageEle"><i class="bi bi-arrow-left"></i></button>
+                <button class='change-button' id="nextPageEle"><i class="bi bi-arrow-right"></i></button>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
