@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*main app container */
+.app-container {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/*----------------------------------------- Header container ----------------------------*/
+.header-container {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+/* 1) nav container */
+.nav-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    padding-top: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .nav-container {
+        padding: 50px 20px 20px 20px;
+    }
+}
+
+/* -------logo container */
+.logo-container {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+}
+
+@media screen and (min-width:768px) {
+    .logo-container {
+        width: 10%;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logo-image {
+        width: 90%;
+        max-width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .logo-image {
+        width: 90%;
+        max-height: 100px;
+        max-width: 100px;
+    }
+}
+
+/* ------------input search Element -------------------*/
+.header-search {
+    border-radius: 8px;
+    padding: 4px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto";
+    outline: none;
+}
+
+@media screen and (max-width:767px) {
+    .search-box-container {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .header-search {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .search-box-container {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 0px;
+        margin-left: 0px
+    }
+
+    .header-search {
+        width: 100%;
+    }
+}
+
+/* --------------------Nav Items---------------*/
+@media screen and (max-width:767px) {
+    .nav-items {
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+        top: -500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+        transition: .4s;
+        background-color: #ffffff;
+    }
+}
+
+.show_menu {
+    top: 100px;
+}
+
+@media screen and (min-width:768px) {
+    .nav-items {
+        width: 60%;
+    }
+}
+
+.nav-items-container {
+    list-style: none;
+}
+
+@media screen and (max-width:767px) {
+    .nav-items-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .nav-items-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav_item {
+        margin-bottom: 13px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .nav_item {
+        margin-right: 13px;
+    }
+}
+
+
+.nav_item:hover {
+    color: #707070;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*nav_link*/
+.nav_link {
+    color: #707070;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "sans-serif";
+}
+
+.nav_link:hover {
+    color: #707070;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.active-link {
+    color: #0000CD;
+}
+
+/*----------------------hamburger menu and close menu----------------*/
+@media screen and (min-width:768px) {
+
+    .nav_toggle_container,
+    .burger-menu,
+    .close-menu {
+        display: none;
+        width: 0%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .nav_toggle_container {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-self: flex-end;
+    }
+}
+
+.burger-menu,
+.close-menu {
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*----------------main container --------------*/
+.main-container {
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding-top: 20px;
+    width: 100%;
+}
+
+/* drop box*/
+.select-container {
+    position: relative;
+    display: flex;
+    max-width: 50%;
+    text-align: center;
+    padding-left: 40px;
+}
+
+/*----------------- Movie slist container -----------------------------*/
+.movies-unordered-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 50px 20px 40px 20px;
+}
+
+/*---------------------- Each movie display -----------------*/
+
+.movie-list-item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    max-width: 350px;
+    background-color: #eee;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+    .movie-list-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .movie-list-item {
+        width: 30%;
+        height: 400px;
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
+}
+
+/* ------------ list item image container and image */
+.movie-image-container {
+    width: 100%;
+}
+
+.movie-image {
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+/*--------------- movie list item text container ----------*/
+.movie-text-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moviie-title {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins";
+    color: #22254b;
+}
+
+.rating-box {
+    width: 20%;
+}
+
+.rating-text {
+    background-color: #22254b;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+
+.green {
+    color: #2DF509;
+}
+
+.ornage {
+    color: #FB3800;
+}
+
+.red {
+    color: #FB0016;
+}
+
+/* movie description on hover option -------------*/
+.overview-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    background-color: #fff;
+    padding: 10px;
+    transform: translateY(101%);
+}
+
+.movie-list-item:hover>.moviie-title {
+    font-size: 20px;
+}
+
+/*.overview-container{
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie-text-container:hover .overview-container {
+    transform: translateY(0);
+}*/
+
+/*--------------footer section--------------------*/
+.footer-section {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+}
+
+.change-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.change-button {
+    border-radius: 100px;
+    background-color: #6495ED;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Roboto";
+}
+
+
+/*--------------independent page container-------------------*/
+.independent-movie-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.movie-title-image-container {
+    border: 1px solid #808080;
+    background-color: #E6E6FA;
+}
+
+@media screen and (max-width:767px) {
+    .movie-title-image-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .movie-title-image-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .ind-movie-image {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .ind-movie-image {
+        height: 400px;
+    }
+}
+
+.ind-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-title-rating-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .movie-title-rating-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+.ind-movie-title-container {
+    width: 80%;
+}
+
+.ind-movie-title {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Roboto";
+}
+
+.ind-rating-box {
+    width: 20%;
+}
+
+.ind-rating-text {
+    width: 40px;
+    background-color: #22254b;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.ind-overview-container {
+    padding: 0px 10px 20px 10px;
+}
+
+.overview-heading {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+.ind-movie-overvie {
+    text-align: justify;
+}
+
+
+.ind-back-button {
+    padding: 6px 12px 6px 12px;
+    border-width: 0px;
+    border-radius: 8px;
+    background-color: #00bfff;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Roboto";
+}
+
+.ind-add-favourite-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.heart-shape {
+    color: red;
+    font-size: 30px;
+    /* cursor: pointer;*/
+}
+
+.favourite-text {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.invalid-image {
+    width: 300px;
+    height: 300px;
+}
